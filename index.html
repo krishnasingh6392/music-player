@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gradient-to-r from-pink-100 to-violet-100 h-screen">
+    <h1 id="title" class="text-center text-4xl p-4">Favourite Music-list</h1>
+    <div class="flex justify-center items-center mt-8">
+      <!-- container div  -->
+      <div
+        id="music-box"
+        class="flex justify-center items-center flex-col h-120 w-80 bg-gradient-to-tr from-pink-300 to-violet-400 rounded-lg shadow-xl"
+      >
+        <img
+          id="image"
+          class="h-48 w-48 mb-16 rounded-lg shadow-xl"
+          src="./images/michael-jackson.jpg"
+          alt="akon"
+        />
+        <h3 id="song-name" class="text-center text-2xl text-slate-900 mb-2">
+          Dangerous
+        </h3>
+        <h5 id="singer-name" class="text-center text-gray-700 text-lg mb-2">
+          Michael Jackson
+        </h5>
+        <audio
+          id="song"
+          class="mt-2 hidden"
+          src="./audio/dangerous.mp3"
+          controls
+        ></audio>
+        <div class="flex justify-center items-center gap-4 text-3xl">
+          <i
+            id="reverse-button"
+            class="ri-play-reverse-line cursor-pointer"
+          ></i>
+          <i
+            id="pause-n-play-button"
+            class="ri-play-circle-fill text-6xl cursor-pointer"
+          ></i>
+          <i id="next-button" class="ri-play-line cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/music\ bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    
+}
+#title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: "SUSE", system-ui;
+}
+.container{
+ display: flex;
+ justify-content: center;
+ height: 100%
+}
+#music-box{
+  
+    height: 430px;
+    width: 280px;
+    background-color: rgb(226, 60, 60);
+    border: 1.5px solid white;
+    border-radius: 5%;
+    margin-top: 30px;
+}
+#music-box img{
+    margin-top: 20%;
+    margin-left: 15%;
+    height: 190px;
+    width: 190px;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    box-shadow: 5px 5px 10px white;
+}
+.rotate{
+    animation: rotateplayer 5s linear infinite;
+}
+@keyframes rotateplayer{
+  from{
+transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+#btn{ 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 40px;
+margin-top: 30px;
+
+}
+
+.circle{
+    margin: 0 70px;
+ 
+
+}
+#song{
+    height: 30px;
+    width: 250px;
+    margin-top: 12px;
+    margin-left: 12px;
+    display: none;
+   
+}
+#song-name{
+text-align: center;
+color: rgb(0, 0, 0);
+margin-top: 15px;
+font-size: 27px;
+font-family: "SUSE", system-ui;
+}
+#singer-name{
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    font-family: "SUSE", system-ui;
+    font-size: 18px;
+}
+.next:hover{
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+.circle:hover{
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+.reverse:hover{
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
